@@ -1,0 +1,35 @@
+.section-about {
+  background-color: $color-grey-light-1;
+  padding: 20rem 0;
+  margin-top: -20vh;
+}
+
+.section-shows {
+  padding: 0 !important;
+}
+.shows-showcase {
+  list-style: none !important;
+  width: 100% !important;
+}
+.shows-showcase li {
+  display: block !important;
+  float: left !important;
+  width: 25%;
+}
+.shows-photo {
+  width: 100%;
+  margin: 0;
+  background-color: #000;
+  overflow: hidden;
+}
+.shows-photo img {
+  opacity: 0.9;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+.shows-photo img:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
