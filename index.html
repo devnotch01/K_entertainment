@@ -14,6 +14,18 @@
     <title>K-entertainment</title>
   </head>
   <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+      <label for="navi-toggle" class="navigation__button">MENU</label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#" class="navigation__link">A propos</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Contactez-nous</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Galerie</a></li>
+        </ul>
+      </nav>
+    </div>
     <header class="header">
       <div class="header__logo-box">
         <img
@@ -72,7 +84,41 @@
               </div>
         </div>
       </section>
-      <!-- <section class="section-shows">
+      <section class="section-features">
+        <div class="row">
+          <div class="col-1-of-2">
+            <div class="feature-box">
+              <h3 class="heading-tertiary">Vous êtes artiste</h3>
+              <p class="feature-box__text">
+                  Indépendant ou signé et avez une musique,
+                mixtape ou un album à sortir, notre agence de direction
+                  artistique vous apportera l’assistance et le professionnalisme
+                  pour la réalisation et la production du contenu artistique idéal
+                  à la sortie de vos projets. Nous aurons le plaisir de produire
+                  et créer votre contenu visuel partant des scénarios, de la
+                  réalisation des c jusqu’au contenu promotionnel pour la sortie
+                  de vos projets, et pour finir un plan de marketing associé à
+                  votre projet.
+              </p>
+            </div>
+        
+          </div>
+          <div class="col-1-of-2">
+              <div class="feature-box">
+                <h3 class="heading-tertiary">Vous êtes cameraman, monteur ou realistateur</h3>
+                <p class="feature-box__text">
+                  <span>&nbsp;<br>&nbsp;<br>&nbsp;</span>
+                    Nous
+                avons des projets audiovisuels très créatifs pour des artistes
+                et nous vous invitons à joindre notre équipe. 
+                <span><br>&nbsp;<br>&nbsp;<br>&nbsp;<br></span>
+                </p>
+              </div>
+          
+            </div>
+        </div>
+      </section>
+      <section class="section-shows">
         <ul class="shows-showcase clearfix">
           <li>
             <figure class="shows-photo">
@@ -115,8 +161,43 @@
             </figure>
           </li>
         </ul>
-      </section> -->
+      </section>
+      
     </main>
+
+    <footer class="footer">
+      <div class="footer__logo-box">
+          <img src="/resources/css/img/logo.jpg" alt="The-K-entertainment logo" class="footer__logo">
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+              <ul class="footer__social-links">
+              
+                  <li>
+                    <a href="https://www.facebook.com/werareyoungchildrendreams/" target="_blank"
+                      ><ion-icon
+                        name="logo-facebook"
+                        class="social-facebook"
+                      ></ion-icon
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/thekentertainment/" target="_blank"
+                      ><ion-icon name="logo-instagram" class="social-ig"></ion-icon
+                    ></a>
+                  </li>
+                </ul>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            Built by <a href="#" target="_blank" class="footer__link">Habib Mboup</a> Copyright &copy; by Habib Mboup and The-K-Entertainment.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
   </body>
 </html>
 <!-- <section class="grid-test">

@@ -3,7 +3,24 @@
   padding: 20rem 0;
   margin-top: -20vh;
 }
+.section-features {
+  //   margin-top: -10rem;
+  padding: 20rem 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(/resources/css/img/show-bg.jpg);
+  background-size: cover;
+  background-position: center;
 
+  //   transform: skewY(-3deg);
+
+  //   & > * {
+  //     transform: skewY(3deg);
+  //   }
+}
 .section-shows {
   padding: 0 !important;
 }
@@ -32,4 +49,56 @@
 .shows-photo img:hover {
   opacity: 1;
   transform: scale(1.03);
+}
+
+.footer__social-links {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.footer__social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.footer-nav li:last-child,
+.footer__social-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.footer__social-links li a:link,
+.footer__social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  transition: color 0.2s;
+}
+.footer-nav li a:hover,
+footer-nav li a:active {
+  color: #ddd;
+}
+.footer__social-links li a:link,
+.footer__social-links li a:visited {
+  font-size: 160%;
+}
+.social-facebook,
+.social-google,
+.social-twitter,
+.social-ig {
+  transition: color 0.2s;
+}
+
+.social-facebook:hover {
+  color: #3b5998;
+}
+.social-google:hover {
+  color: #dd4b39;
+}
+.social-twitter:hover {
+  color: #00aced;
+}
+.social-ig:hover {
+  color: #e4405f;
 }
