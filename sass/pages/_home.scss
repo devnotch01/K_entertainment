@@ -2,6 +2,9 @@
   background-color: $color-grey-light-1;
   padding: 20rem 0;
   margin-top: -20vh;
+  @include respond(tab-port) {
+    padding: 20rem 0;
+  }
 }
 .section-features {
   //   margin-top: -10rem;
@@ -14,6 +17,9 @@
     url(/resources/css/img/show-bg.jpg);
   background-size: cover;
   background-position: center;
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
 
   //   transform: skewY(-3deg);
 
@@ -81,7 +87,7 @@ footer-nav li a:active {
 }
 .footer__social-links li a:link,
 .footer__social-links li a:visited {
-  font-size: 160%;
+  font-size: 500%;
 }
 .social-facebook,
 .social-google,

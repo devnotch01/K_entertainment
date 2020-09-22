@@ -18,6 +18,11 @@ body {
     letter-spacing: 10px;
     animation-name: moveInLeft;
     animation-duration: 1s;
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-family: 5rem;
+      font-size: 30%;
+    }
   }
   &--sub {
     display: block;
@@ -26,6 +31,9 @@ body {
     letter-spacing: 5px;
     animation-name: moveInRight;
     animation-duration: 5s;
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+    }
   }
 }
 .heading-secondary {
@@ -41,6 +49,14 @@ body {
   color: transparent;
   letter-spacing: 2px;
   transition: all 0.2s;
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+
   &:hover {
     transform: skewX(14deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
