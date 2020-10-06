@@ -6,8 +6,7 @@
   "scripts": {
     "watch:sass": "node-sass sass/main.scss resources/css/style.css -w",
     "devserver": "live-server",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
+    "start": "npm-run-all --parallel devserver watch:sass",
     "compile:sass": "node-sass sass/main.scss resources/css/style.comp.css",
     "concat:css": "concat -o resources/css/style.concat.css resources/css/icon-font.css resources/css/style.comp.css",
     "prefix:css": "postcss resources/css/style.concat.css --use autoprefixer -o resources/css/style.prefix.css",
