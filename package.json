@@ -2,11 +2,15 @@
   "name": "k_project",
   "version": "1.0.0",
   "description": "landing page for k_entertainment",
+  "engines": {
+    "node": "12.18.3"
+  },
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss resources/css/style.css -w",
     "devserver": "live-server",
-    "start": "npm-run-all --parallel devserver watch:sass",
+    "start": "node index.js",
+    "test": "node test.js",
     "compile:sass": "node-sass sass/main.scss resources/css/style.comp.css",
     "concat:css": "concat -o resources/css/style.concat.css resources/css/icon-font.css resources/css/style.comp.css",
     "prefix:css": "postcss resources/css/style.concat.css --use autoprefixer -o resources/css/style.prefix.css",
@@ -18,7 +22,10 @@
     "url": "git+https://github.com/habib92i/K_entertainment.git"
   },
   "keywords": [
-    "k_entertainment"
+    "k_entertainment",
+    "node",
+    "heroku",
+    "express"
   ],
   "author": "habib",
   "license": "ISC",
@@ -32,9 +39,15 @@
     "concat": "^1.0.3",
     "node-sass": "^4.14.1",
     "postcss": "^8.0.8",
-    "postcss-cli": "^8.0.0"
+    "postcss-cli": "^8.0.0",
+    "got": "^11.3.0",
+    "tape": "^4.7.0"
   },
   "dependencies": {
+    "express": "^4.17.1",
+    "foobar": "1.1.0",
+    "ejs": "^2.5.6",
     "jquery": "^3.5.1"
-  }
+  },
+  "heroku-run-build-script": true
 }
