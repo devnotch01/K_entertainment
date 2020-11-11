@@ -259,8 +259,7 @@ input[type='submit'] {
   transition: all 0.2s;
 }
 
-.btn-text:hover,
-input[type='submit'] {
+.btn-text:hover {
   background-color: #0097e6;
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
@@ -667,7 +666,9 @@ input[type='submit'] {
 .section-shows {
   padding: 0 !important;
 }
-
+.section-form {
+  background-color: #f7f7f7;
+}
 .contact-form {
   width: 60%;
   margin: 0 auto;
